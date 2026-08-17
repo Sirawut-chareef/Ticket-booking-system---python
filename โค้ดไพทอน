@@ -1,0 +1,37 @@
+#เเอพจองตั๋ว
+while True:
+    print("\n=== ระบบจองตั๋วหนัง ===")
+
+    # ฟังก์ชันที่ 1 เลือกหนัง
+    print("1. Avengers")
+    print("2. Minecraft")
+    movie = input("เลือกหนัง: ")
+
+    # ฟังก์ชันที่ 2 เลือกเวลา
+    print("\n1. 13:00")
+    print("2. 18:00")
+    time = input("เลือกเวลา: ")
+
+    print("\n=== รายการจอง ===")
+
+    if movie == "1":
+        print("ภาพยนตร์: Avengers")
+    elif movie == "2":
+        print("ภาพยนตร์: Minecraft")
+
+    if time == "1":
+        print("เวลา: 13:00")
+    elif time == "2":
+        print("เวลา: 18:00")
+
+    print("จองตั๋วสำเร็จ!")
+
+    print("\nต้องการจองอีกครั้งหรือไม่?")
+    print("1. จองอีกครั้ง")
+    print("2. ไม่ต้องการ")
+
+    again = input("เลือก: ")
+
+    if again != "1":
+        print("ขอบคุณที่ใช้บริการ")
+        break
